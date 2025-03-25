@@ -1,0 +1,129 @@
+body {
+    background-image: url(image-mesh-gradient\ \(1\).png);
+    height: 2000px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+H1 {
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: white;
+text-align: center;
+font-size: 30px;
+}
+
+button {
+    width: 130px;
+    height: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 20px;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    transform: translate(17px, 5px);
+    background-color: rgba(255, 255, 255, 0.521);
+}
+
+button:hover {
+    animation: 1s UP;
+    box-shadow: 4px 4px 10px rgba(197, 197, 197, 0.349);
+}
+
+@keyframes UP {
+    from {transform:translate(17px, 0px);}
+    to {transform:translate(17px, -10px);}
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.233);
+    border-radius: 20px;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    width: 700px;
+    height: 40px;
+    transform: translate(500px, 40px);
+    animation: UPDOWN 5s infinite alternate;
+    box-shadow: 4px 4px 30px rgb(133, 133, 133);
+}
+
+@keyframes UPDOWN {
+    from {transform:translate(500px,40px) ;}
+    to {transform:translate(500px,-5px) ;}
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.322);
+    border-radius: 20px;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    position: absolue;
+    transform: translate();
+    height: 400px;
+    width: 99%;
+    transform: translateY(1000px);
+}
+
+article {
+    margin-top: 10%;
+width: 99%;
+height: 150px;
+transform: translate(0px, 100px);
+animation: appear linear;
+animation-timeline: view();
+animation-range: entry 0 cover 40%;
+display: flex;
+}
+
+@keyframes appear {
+    from {opacity: 0; transform: translateX(-500px);}
+    to {opacity: 1; transform: translateX(0px);}
+}
+
+img {
+    height: 150px;
+    width: 250px;
+    transform: translate(25px, 25px);
+    border-radius: 20px;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.card {
+    height: 500px;
+    width: 300px;
+    position: relative;
+    background-image: linear-gradient(-30deg, rgba(255, 255, 255, 0.452) , rgba(77, 77, 77, 0.37), rgba(255, 255, 255, 0.397));
+    border-radius: 20px;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    margin-right: 2%;
+    transform: translateX(55px);
+    box-shadow: 4px 4px 20px rgba(255, 255, 255, 0.507);
+}
+
+section {
+    width: 80%;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.329);
+    border-radius: 20px;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.589);
+    transform: translate(150px, 400px);
+}
+
+.info {
+    border-radius: 20px;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    height: 230px;
+    width: 268px;
+    margin-left: 5%;
+    columns: 3 100px;
+}
